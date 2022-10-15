@@ -1,0 +1,32 @@
+try:
+    class Fibonacci:
+
+        #Fib method will take n interger value as arguments
+        def __init__(self,n):
+            self.n = n
+            
+        def fib(self):
+            a = 0
+            b = 1
+            while self.n <= 0:
+                self.n = int(input("Enter a number greater than 0: "))
+                continue
+            
+            if self.n == 1:
+                print(a)
+            else:
+                print(a)
+                print(b)
+
+                for i in range (2,self.n):
+                    c = a + b
+                    a = b
+                    b = c
+                    print(c)
+                    
+    n = int(input("Enter a integer: "))            
+    fi = Fibonacci(n) #Fib object
+    fi.fib()
+except:
+    print("Error Occured")
+    
